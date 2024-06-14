@@ -16,6 +16,9 @@ describe('HSBC Login test functionality', () => {
       //Click on Login button
       cy.xpath('//div[3]/a[@class="selected-item login-button only-one-link"]').click({force: true});
 
+      //Click on Login button
+      cy.xpath('//*[text() ="Continue to log on with browser"]').click();
+
       //Validate Log On header in Login page
       cy.xpath('//h2/span[text()=" Log On   "]').should('exist');
 
