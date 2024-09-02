@@ -39,6 +39,8 @@ describe('This spec will be used to test ATM search functionality', () => {
     cy.xpath("//ul//li//span[text()='2']").should('be.visible')
 
     cy.wait(4000); 
+
+    cy.scrollTo('bottom');
    
     //Check Instagram in social media option in footer section
     cy.xpath('//a[@id="content_socialmediafooterlink_1"]').should('be.visible');
