@@ -43,16 +43,16 @@ describe('This spec will be used to test ATM search functionality', () => {
     cy.scrollTo('bottom');
    
     //Check Instagram in social media option in footer section
-    cy.xpath('//a[@id="content_socialmediafooterlink_1"]').should('be.visible');
+    cy.xpath('//a[@id="hp_socialmediafooterlink_1"]').should('be.visible');
 
     //Check Facebook in social media option in footer section
-    cy.xpath('//a[@id="content_socialmediafooterlink_2"]').should('exist');
+    cy.xpath('//a[@id="hp_socialmediafooterlink_2"]').should('exist');
 
     //Check Twitter in social media option in footer section
-    cy.xpath('//a[@id="content_socialmediafooterlink_3"]').should('exist');
+    cy.xpath('//a[@id="hp_socialmediafooterlink_3"]').should('exist');
 
     //Check Youtube in social media option in footer section
-    cy.xpath('//a[@id="content_socialmediafooterlink_4"]').should('exist');
+    cy.xpath('//a[@id="hp_socialmediafooterlink_4"]').should('exist');
 
     //Click on HSBC Logo
     cy.xpath('//div[@class="header-logo lg-2"]/a').click();
